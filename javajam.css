@@ -15,35 +15,104 @@ h1 { padding-top: 45px;
 h4 { background-color: #D2B48C;
     font-size: 1.2em;
 	padding-left:   .5em;   
-	padding-bottom: .25em;    
+	padding-bottom: 0;
+    text-transform:capitalize;
+    border-bottom: 0px;
+    clear: left;
 }
 nav { text-align: center; 
      font-weight: bold; 
 	 font-size: 1.5em;
 	 padding-top: 10px;
+     float: left;
+     width: 200px;
 }
-nav a { text-decoration: none; }
-main { padding-left: 2em;
-      padding-right: 2em;
+nav a { text-decoration: none;
+    display: block;
+}
+nav a:link {color:#FEF6C2;}
+nav a:visited {color: #D2B48C;}
+nav a:hover {color: #CC9933;}
+nav ul{text-decoration: none;
+    padding-left: 0;
+}
+main { padding-left: 0;
+      padding-right: 0;
 	  padding-bottom: 2em;
 	  display: block;
+      margin-left: 200px;
+      padding-top: 0;
+      background-color: #FEF6C2
+}
+main h2{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+main h3{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+main h4{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+main p{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+main div{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+main ul{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+main dl{
+    padding-left: 3em;
+    padding-right: 2em;
 }
 footer { background-color: #D2B48C;
        font-size: .60em;
 	   font-style: italic;
 	   text-align: center;
 }
-#wrapper { width: 80%;
+#wrapper { background-color: #231814;
+           width: 80%;
            margin-right: auto;
 		   margin-left: auto;
-		   background-color: #FEF6C2;
 		   min-width: 900px;
 		   max-width: 1280px;
 		   box-shadow: 3px 3px 3px #666666;
 }
 .details { padding-left: 20%;
            padding-right: 20%;
+           overflow: auto;
 }
 img { padding-left: 10px;
      padding-right: 10px;
 }
+
+* {box-sizing: border-box;}
+
+#heroroad{
+    background-image: url(heroroad.jpg);
+    background-size: 100%;
+    height: 250px;
+}
+#heromugs{
+    background-image: url(heromugs.jpg);
+    background-size: 100%;
+    height: 250px;
+}
+#heroguitar{
+    background-image: url(heroguitar.jpg);
+    background-size: 100%;
+    height: 250px;
+}
+.floatleft{
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+header, nav, main, foot { display: block;}
